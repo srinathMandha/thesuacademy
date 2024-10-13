@@ -1,15 +1,15 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "AWS Cloud Unlocking Infinite Possibilities in the Cloud",
+  "text": "The future of technology lies in the cloud, and Amazon Web Services (AWS) leads the way with its robust, secure, and scalable cloud solutions. From startups to global enterprises, AWS is the backbone of digital transformation, empowering businesses to innovate faster and reduce operational costs.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "AWS Solution Architect",
+      "content": "In the ever-evolving world of cloud computing, the role of an AWS Solution Architect is crucial in designing scalable, cost-effective, and secure cloud infrastructures. As businesses increasingly migrate to the cloud, having the right architecture ensures seamless integration, optimal performance, and robust security.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "AWS Systems Administrator & Cloud Engineer",
+      "content": "As the cloud landscape grows, the demand for skilled professionals who can efficiently manage and maintain AWS infrastructure is higher than ever. AWS Systems Administrators and Cloud Engineers play a critical role in ensuring that cloud environments run smoothly, securely, and at peak performance.",
       "icon": "notes.svg"
     }
   ]

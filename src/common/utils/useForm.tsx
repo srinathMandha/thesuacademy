@@ -44,7 +44,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
           notification["error"]({
             message: "Error",
             description:
-              "There was an error sending your message, please try again later.",
+              "There was an error sending your message, Please drop an email to srinath.mandha@zmail.com or vickysrinath.mandha@gmail.com.",
           });
         } else {
           event.target.reset();
