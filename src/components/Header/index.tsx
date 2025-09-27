@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation, TFunction } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
@@ -18,6 +19,7 @@ import {
 
 const Header = ({ t }: { t: TFunction }) => {
   const [visible, setVisibility] = useState(false);
+  const navigate = useNavigate(); // <-- Added for navigation
 
   const toggleButton = () => {
     setVisibility(!visible);
@@ -26,11 +28,19 @@ const Header = ({ t }: { t: TFunction }) => {
   const MenuItem = () => {
     const scrollTo = (id: string) => {
       const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
       setVisibility(false);
     };
+
+    const goToLogin = () => {
+      navigate("/login"); // <-- Redirect to login page
+      setVisibility(false);
+    };
+
     return (
       <>
         <CustomNavLinkSmall onClick={() => scrollTo("about")}>
@@ -44,10 +54,10 @@ const Header = ({ t }: { t: TFunction }) => {
         </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
+          onClick={goToLogin} // <-- Updated
         >
           <Span>
-            <Button>{t("Contact")}</Button>
+            <Button>{t("Login")}</Button>
           </Span>
         </CustomNavLinkSmall>
       </>
